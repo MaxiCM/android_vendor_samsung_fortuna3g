@@ -14,51 +14,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
 	$(LOCAL_PATH)/app/TimeService/TimeService.apk:system/app/TimeService/TimeService.apk
 	
-#
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
-	$(LOCAL_PATH)/bin/imsdatadaemon:system/bin/imsdatadaemon \
-	$(LOCAL_PATH)/bin/imsqmidaemon:system/bin/imsqmidaemon \
-	$(LOCAL_PATH)/bin/imscmservice:system/bin/imscmservice \
-	$(LOCAL_PATH)/vendor/lib/lib-imsrcscmservice.so:system/vendor/lib/lib-imsrcscmservice.so \
-	$(LOCAL_PATH)/vendor/lib/lib-imsrcscmclient.so:system/vendor/lib/lib-imsrcscmclient.so \
-	$(LOCAL_PATH)/vendor/lib/lib-imsrcscm.so:system/vendor/lib/lib-imsrcscm.so \
-	$(LOCAL_PATH)/vendor/lib/lib-dplmedia.so:system/vendor/lib/lib-dplmedia.so \
-	$(LOCAL_PATH)/vendor/lib/lib-imscamera.so:system/vendor/lib/lib-imscamera.so \
-	$(LOCAL_PATH)/vendor/lib/lib-imsdpl.so:system/vendor/lib/lib-imsdpl.so \
-	$(LOCAL_PATH)/vendor/lib/lib-imsqimf.so:system/vendor/lib/lib-imsqimf.so \
-	$(LOCAL_PATH)/vendor/lib/lib-imsrcs.so:system/vendor/lib/lib-imsrcs.so \
-	$(LOCAL_PATH)/vendor/lib/lib-imsrcscm.so:system/vendor/lib/lib-imsrcscm.so \
-	$(LOCAL_PATH)/vendor/lib/lib-imsrcscmclient.so:system/vendor/lib/lib-imsrcscmclient.so \
-	$(LOCAL_PATH)/vendor/lib/lib-imsrcscmservice.so:system/vendor/lib/lib-imsrcscmservice.so \
-	$(LOCAL_PATH)/vendor/lib/lib-imss.so:system/vendor/lib/lib-imss.so \
-	$(LOCAL_PATH)/vendor/lib/lib-imsSDP.so:system/vendor/lib/lib-imsSDP.so \
-	$(LOCAL_PATH)/vendor/lib/lib-imsvt.so:system/vendor/lib/lib-imsvt.so \
-	$(LOCAL_PATH)/vendor/lib/lib-imsxml.so:system/vendor/lib/lib-imsxml.so \
-	$(LOCAL_PATH)/vendor/lib/lib-rcsimssjni.so:system/vendor/lib/lib-rcsimssjni.so \
-	$(LOCAL_PATH)/vendor/lib/lib-rcsjni.so:system/vendor/lib/lib-rcsjni.so \
-	$(LOCAL_PATH)/vendor/lib/lib-rtpcommon.so:system/vendor/lib/lib-rtpcommon.so \
-	$(LOCAL_PATH)/vendor/lib/lib-rtpcore.so:system/vendor/lib/lib-rtpcore.so \
-	$(LOCAL_PATH)/vendor/lib/lib-rtpdaemoninterface.so:system/vendor/lib/lib-rtpdaemoninterface.so \
-	$(LOCAL_PATH)/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so \
-	$(LOCAL_PATH)/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
-	$(LOCAL_PATH)/vendor/lib/libCommandSvc.so:system/vendor/lib/libCommandSvc.so \
-	$(LOCAL_PATH)/vendor/lib/libFileMux.so:system/vendor/lib/libFileMux.so \
-	$(LOCAL_PATH)/vendor/lib/libhwdaphal.so:system/vendor/lib/libhwdaphal.so \
-	$(LOCAL_PATH)/vendor/lib/liblistenjni.so:system/vendor/lib/liblistenjni.so \
-	$(LOCAL_PATH)/vendor/lib/liblistensoundmodel2.so:system/vendor/lib/liblistensoundmodel2.so \
-	$(LOCAL_PATH)/vendor/lib/libmdsprpc.so:system/vendor/lib/libmdsprpc.so \
-	$(LOCAL_PATH)/vendor/lib/libnative_audio_latency_jni.so:system/vendor/lib/libnative_audio_latency_jni.so \
-	$(LOCAL_PATH)/vendor/lib/libqct_resampler.so:system/vendor/lib/libqct_resampler.so \
-	$(LOCAL_PATH)/vendor/lib/libscve.so:system/vendor/lib/libscve.so \
-	$(LOCAL_PATH)/vendor/lib/libscve_mv.so:system/vendor/lib/libscve_mv.so \
-	$(LOCAL_PATH)/vendor/lib/libsubsystem_control.so:system/vendor/lib/libsubsystem_control.so \
-	$(LOCAL_PATH)/vendor/lib/libSubSystemShutdown.so:system/vendor/lib/libSubSystemShutdown.so \
-	$(LOCAL_PATH)/vendor/lib/libvcel.so:system/vendor/lib/libvcel.so \
-	$(LOCAL_PATH)/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so \
-	$(LOCAL_PATH)/vendor/lib/libwfdcommonutils.so:system/vendor/lib/libwfdcommonutils.so
-	
-	
 # Bluetooth
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/bin/btnvtool:system/bin/btnvtool \
