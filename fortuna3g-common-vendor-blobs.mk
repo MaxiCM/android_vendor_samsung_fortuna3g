@@ -34,7 +34,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib/hw/camera.msm8916.so:system/lib/hw/camera.vendor.msm8916.so \
 	$(LOCAL_PATH)/lib/libqomx_core.so:system/lib/libqomx_core.so \
 	$(LOCAL_PATH)/vendor/lib/libactuator_dw9804_kleos_camcorder.so:system/vendor/lib/libactuator_dw9804_kleos_camcorder.so \
-    	$(LOCAL_PATH)/vendor/lib/libactuator_dw9804_kleos_camera.so:system/vendor/lib/libactuator_dw9804_kleos_camera.so \
+    $(LOCAL_PATH)/vendor/lib/libactuator_dw9804_kleos_camera.so:system/vendor/lib/libactuator_dw9804_kleos_camera.so \
 	$(LOCAL_PATH)/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
 	$(LOCAL_PATH)/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
 	$(LOCAL_PATH)/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
@@ -60,7 +60,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/vendor/lib/libmmcamera_lsi_s5k5e3yx_eeprom.so:system/vendor/lib/libmmcamera_lsi_s5k5e3yx_eeprom.so \
 	$(LOCAL_PATH)/vendor/lib/libmmcamera_rohm_brce064gwz_eeprom.so:system/vendor/lib/libmmcamera_rohm_brce064gwz_eeprom.so \
 	$(LOCAL_PATH)/vendor/lib/libchromatix_imx219_common.so:system/vendor/lib/libchromatix_imx219_common.so \
-    	$(LOCAL_PATH)/vendor/lib/libchromatix_imx219_common_res0.so:system/vendor/lib/libchromatix_imx219_common_res0.so \
+    $(LOCAL_PATH)/vendor/lib/libchromatix_imx219_common_res0.so:system/vendor/lib/libchromatix_imx219_common_res0.so \
 	$(LOCAL_PATH)/vendor/lib/libchromatix_imx219_default_video.so:system/vendor/lib/libchromatix_imx219_default_video.so \
 	$(LOCAL_PATH)/vendor/lib/libchromatix_imx219_liveshot.so:system/vendor/lib/libchromatix_imx219_liveshot.so \
 	$(LOCAL_PATH)/vendor/lib/libchromatix_imx219_panorama.so:system/vendor/lib/libchromatix_imx219_panorama.so \
@@ -99,6 +99,12 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib/libawb_algo_rear_al.so:system/lib/libawb_algo_rear_al.so \
 	$(LOCAL_PATH)/lib/libawb_algo_front_al.so:system/lib/libawb_algo_front_al.so \
 	$(LOCAL_PATH)/lib/libaec_algo_rear.so:system/lib/libaec_algo_rear.so \
+	$(LOCAL_PATH)/lib/libarcsoft_night_shot_ex.so:system/lib/libarcsoft_night_shot_ex.so \
+	$(LOCAL_PATH)/lib/libarcsoft_panorama_burstcapture.so:system/lib/libarcsoft_panorama_burstcapture.so \
+	$(LOCAL_PATH)/lib/libarcsoft_selfie_camera_lite.so:system/lib/libarcsoft_selfie_camera_lite.so \
+	$(LOCAL_PATH)/lib/libarcsoft_sensorndk.so:system/lib/libarcsoft_sensorndk.so \
+	$(LOCAL_PATH)/lib/libarcsoft_wideselfie.so:system/lib/libarcsoft_wideselfie.so \
+	$(LOCAL_PATH)/lib/libarcsoft_picaction.so:system/lib/libarcsoft_picaction.so \
 	$(LOCAL_PATH)/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
 	$(LOCAL_PATH)/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
 	$(LOCAL_PATH)/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
