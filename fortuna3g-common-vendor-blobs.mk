@@ -182,7 +182,9 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
 	$(LOCAL_PATH)/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
 	$(LOCAL_PATH)/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
-	$(LOCAL_PATH)/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so
+	$(LOCAL_PATH)/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
+	$(LOCAL_PATH)/lib/libOmxVenc.so:system/lib/libOmxVenc.so \
+	$(LOCAL_PATH)/lib/libc2dcolorconvert.so:system/lib/libc2dcolorconvert.so
 
 # Perf
 PRODUCT_COPY_FILES += \
@@ -277,12 +279,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/etc/Handset_cal.acdb:system/etc/Handset_cal.acdb \
 	$(LOCAL_PATH)/etc/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb \
 	$(LOCAL_PATH)/etc/Headset_cal.acdb:system/etc/Headset_cal.acdb \
-	$(LOCAL_PATH)/etc/Speaker_cal.acdb:system/etc/Speaker_cal.acdb \
-	$(LOCAL_PATH)/vendor/firmware/keymaste.b00:system/vendor/firmware/keymaster/keymaster.b00 \
-	$(LOCAL_PATH)/vendor/firmware/keymaste.b01:system/vendor/firmware/keymaster/keymaster.b01 \
-	$(LOCAL_PATH)/vendor/firmware/keymaste.b02:system/vendor/firmware/keymaster/keymaster.b02 \
-	$(LOCAL_PATH)/vendor/firmware/keymaste.b03:system/vendor/firmware/keymaster/keymaster.b03 \
-	$(LOCAL_PATH)/vendor/firmware/keymaste.mdt:system/vendor/firmware/keymaster/keymaster.mdt
+	$(LOCAL_PATH)/etc/Speaker_cal.acdb:system/etc/Speaker_cal.acdb
 		
 # Audio
 PRODUCT_COPY_FILES += \
@@ -307,13 +304,9 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib/libaudiosa.so:system/lib/libaudiosa.so \
 	$(LOCAL_PATH)/lib/lib_SA_GoogleFX_ver124b.so:system/lib/lib_SA_GoogleFX_ver124b.so \
 	$(LOCAL_PATH)/lib/soundfx/libaudiosa_sec.so:system/lib/soundfx/libaudiosa_sec.so \
-	$(LOCAL_PATH)/lib/lib_SoundAlive_play_ver125e.so:system/lib/lib_SoundAlive_play_ver125e.so \
-	$(LOCAL_PATH)/lib/soundfx/libqcomvoiceprocessing.so:system/lib/soundfx/libqcomvoiceprocessing.so \
-	$(LOCAL_PATH)/lib/soundfx/libqcomvisualizer.so:system/lib/soundfx/libqcomvisualizer.so \
-	$(LOCAL_PATH)/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
-	$(LOCAL_PATH)/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
-	$(LOCAL_PATH)/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
+	$(LOCAL_PATH)/lib/lib_SoundAlive_play_ver125e.so:system/lib/lib_SoundAlive_play_ver125e.so
 
+	
 #	$(LOCAL_PATH)/lib/hw/audio.primary.default.so:system/lib/hw/audio.primary.default.so \
 #	$(LOCAL_PATH)/lib/hw/audio.usb.default.so:system/lib/hw/audio.usb.default.so \
 #	$(LOCAL_PATH)/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.default.so \
@@ -321,12 +314,22 @@ PRODUCT_COPY_FILES += \
 #	$(LOCAL_PATH)/lib/soundfx/libeffectproxy.so:system/lib/soundfx/libeffectproxy.so \
 #	$(LOCAL_PATH)/lib/libeffects.so:system/lib/libeffects.so \
 #	$(LOCAL_PATH)/etc/Tfa9895.cnt:system/etc/Tfa9895.cnt
-#       $(LOCAL_PATH)/lib/libtinycompress.so:system/lib/libtinycompress.so \ 	
+#   $(LOCAL_PATH)/lib/libtinycompress.so:system/lib/libtinycompress.so \ 	
 #	$(LOCAL_PATH)/lib/libaudioutils.so:system/lib/libaudioutils.so \
-#       $(LOCAL_PATH)/lib/lib_SoundAlive_ver118t.so:system/lib/lib_SoundAlive_ver118t.so \
-#       $(LOCAL_PATH)/lib/lib_DNSe_EP_ver216b.so:system/lib/lib_DNSe_EP_ver216b.so
-#       $(LOCAL_PATH)/lib/soundfx/libldnhncr.so:system/lib/soundfx/libldnhncr.so \
-#       $(LOCAL_PATH)/lib/soundfx/libdownmix.so:system/lib/soundfx/libdownmix.so \
-#       $(LOCAL_PATH)/lib/soundfx/libvisualizer.so:system/lib/soundfx/libvisualizer.so \
+#   $(LOCAL_PATH)/lib/lib_SoundAlive_ver118t.so:system/lib/lib_SoundAlive_ver118t.so \
+#   $(LOCAL_PATH)/lib/lib_DNSe_EP_ver216b.so:system/lib/lib_DNSe_EP_ver216b.so
+#   $(LOCAL_PATH)/lib/soundfx/libldnhncr.so:system/lib/soundfx/libldnhncr.so \
+#   $(LOCAL_PATH)/lib/soundfx/libdownmix.so:system/lib/soundfx/libdownmix.so \
+#   $(LOCAL_PATH)/lib/soundfx/libvisualizer.so:system/lib/soundfx/libvisualizer.so \
 #	$(LOCAL_PATH)/lib/soundfx/libreverbwrapper.so:system/lib/soundfx/libreverbwrapper.so \
 # 	$(LOCAL_PATH)/lib/soundfx/libbundlewrapper.so:system/lib/soundfx/libbundlewrapper.so \
+#	$(LOCAL_PATH)/vendor/firmware/keymaste.b00:system/vendor/firmware/keymaster/keymaster.b00 \
+#	$(LOCAL_PATH)/vendor/firmware/keymaste.b01:system/vendor/firmware/keymaster/keymaster.b01 \
+#	$(LOCAL_PATH)/vendor/firmware/keymaste.b02:system/vendor/firmware/keymaster/keymaster.b02 \
+#	$(LOCAL_PATH)/vendor/firmware/keymaste.b03:system/vendor/firmware/keymaster/keymaster.b03 \
+#	$(LOCAL_PATH)/vendor/firmware/keymaste.mdt:system/vendor/firmware/keymaster/keymaster.mdt
+#	$(LOCAL_PATH)/lib/soundfx/libqcomvoiceprocessing.so:system/lib/soundfx/libqcomvoiceprocessing.so \
+#	$(LOCAL_PATH)/lib/soundfx/libqcomvisualizer.so:system/lib/soundfx/libqcomvisualizer.so \
+#	$(LOCAL_PATH)/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
+#	$(LOCAL_PATH)/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
+#	$(LOCAL_PATH)/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
