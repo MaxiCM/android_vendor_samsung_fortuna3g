@@ -182,9 +182,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
 	$(LOCAL_PATH)/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
 	$(LOCAL_PATH)/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
-	$(LOCAL_PATH)/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
-	$(LOCAL_PATH)/lib/libOmxVenc.so:system/lib/libOmxVenc.so \
-	$(LOCAL_PATH)/lib/libc2dcolorconvert.so:system/lib/libc2dcolorconvert.so
+	$(LOCAL_PATH)/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so
 
 # Perf
 PRODUCT_COPY_FILES += \
@@ -306,7 +304,9 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib/soundfx/libaudiosa_sec.so:system/lib/soundfx/libaudiosa_sec.so \
 	$(LOCAL_PATH)/lib/lib_SoundAlive_play_ver125e.so:system/lib/lib_SoundAlive_play_ver125e.so
 
-	
+
+#	$(LOCAL_PATH)/lib/libOmxVenc.so:system/lib/libOmxVenc.so \
+#	$(LOCAL_PATH)/lib/libc2dcolorconvert.so:system/lib/libc2dcolorconvert.so	
 #	$(LOCAL_PATH)/lib/hw/audio.primary.default.so:system/lib/hw/audio.primary.default.so \
 #	$(LOCAL_PATH)/lib/hw/audio.usb.default.so:system/lib/hw/audio.usb.default.so \
 #	$(LOCAL_PATH)/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.default.so \
